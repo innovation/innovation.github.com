@@ -1,3 +1,5 @@
+Bundler.require_env
+
 require 'rack/contrib'
 require 'rack-rewrite'
 
