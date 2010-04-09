@@ -1,5 +1,10 @@
 module ApplicationHelper
-  
+
+  def csp_url(name="")
+    "http://www.microsoft.com/industry/publicsector/government/csp/#{name}"
+  end
+
+  end
   def page_title
     full_page_title.join(" - ")
   end
