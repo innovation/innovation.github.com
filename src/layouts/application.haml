@@ -1,10 +1,11 @@
 !!! Strict
 %html
   %head
-    %title
-      = page_title
-    - if @page_description
-      %meta{:name => "description", :content => @page_description}
+    %title= page_title
+
+    %meta{ :name => "robots",      :content => "all"            }/
+    %meta{ :name => "description", :content => page_description }/
+    %meta{ :name => "keywords",    :content => page_keywords    }/
 
     = stylesheets :screen, :application, :media => "screen, projection"
     = stylesheets :print, :media => "print"
@@ -28,5 +29,6 @@
         = yield
 
       %div#footer
-        %p Mirosoft Innovation Center, Institute of Information Technology, Vietnam Academy of Science and Technology
-        %p 18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam
+        Mirosoft Innovation Center, Institute of Information Technology, Vietnam Academy of Science and Technology
+        %br/
+        18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam

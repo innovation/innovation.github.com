@@ -8,7 +8,17 @@ module ApplicationHelper
     page_title = [@site_name ||= "Microsoft Innovation Center, Vietnam"]
     page_title << @page_title
   end
-  
+
+  def page_description
+    @page_description ||
+    "The best Microsoft based IT services and training in Vietnam"
+  end
+
+  def page_keywords
+    @page_keywords ||
+    "Microsoft Technology, IT Services, IT Training, SharePoint, CRM, .NET, Hanoi, Vietnam"
+  end
+
   def body_id
     @body_id
   end

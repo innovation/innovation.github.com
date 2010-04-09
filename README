@@ -1,0 +1,7 @@
+This site is built using compass + blueprint + staticmatic
+
+[ RUN FIRST ]
+bundle install # to install required gem
+
+[ GENERATE CONTENT ]
+staticmatic build .
