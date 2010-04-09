@@ -11,21 +11,22 @@
     /[if lt IE 8]
       = stylesheets :ie, :media => "screen, projection"
 
-    = javascripts("http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    = javascripts("http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js")
     = javascripts('application')
 
   %body{:id => body_id, :class => body_class}
     %div#container
       %div#header
-        Header -------------------------
+        Microsoft Innovation Center
 
       %div#sidebar
         %ul
-          %li One
-          %li Two
+          %li= link_to "CSP", "http://www.microsoft.com/industry/publicsector/Government/csp/default.aspx"
+          %li= link_to "BP3", "http://www.bp-3.com"
 
       %div#content
         = yield
 
       %div#footer
-        Footer ----------------------------
+        %p Mirosoft Innovation Center, Institute of Information Technology, Vietnam Academy of Science and Technology
+        %p 18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam
