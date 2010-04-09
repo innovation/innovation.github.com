@@ -1,3 +1,5 @@
+require "rubygems"
+require "bundler"
 Bundler.require_env
 
 require 'rack/contrib'
