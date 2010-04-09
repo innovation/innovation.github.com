@@ -1,10 +1,4 @@
-use Rack::Static, :urls => [/./], :root => './'
-
 run lambda { |env|
-  [  200,
-     { 'Content-Type' => 'text/html',
-       'Cache-Control' => 'public, max-age=86400'
-     },
-     File.read('./index.html')
-  ]
+  env["PATH_INFO"] = "index.html" if env["PATH_INFO"] == "/"
+  Rack::File.new(".").call(env)
 }
