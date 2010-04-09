@@ -1,0 +1,91 @@
+/* incase an inverted custom gradient isn't specified */
+
+/* line 3 */
+body {
+  font-family: Verdana;
+  font-size: 10pt;
+}
+/* line 8 */
+body button {
+  font-family: "Lucida Grande", Lucida, Arial, sans_serif;
+  background: url('/images/button_bg.png?1270776031') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  font-size: 18px;
+  line-height: 21.6px;
+  padding: 5px 18px;
+  border-width: 1px;
+  background-color: #47e000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b7e8a1), color-stop(10%, #7fd657), color-stop(50%, #51a729), color-stop(50%, #4b9b26), color-stop(100%, #5fc430));
+  background-image: -moz-linear-gradient(top, #b7e8a1 0%, #7fd657 10%, #51a729 50%, #4b9b26 50%, #5fc430 100%);
+  border-color: #39771d;
+  text-shadow: #1f6100 0px 1px 1px;
+  color: white;
+}
+/* line 162, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 165, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button:focus {
+  outline: none;
+}
+/* line 167, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button.disabled, body button[disabled] {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: alpha(opacity=70);
+}
+/* line 172, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button.disabled:hover, body button.disabled:focus, body button[disabled]:hover, body button[disabled]:focus {
+  cursor: default;
+}
+/* line 143, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button:active {
+  padding: 4px 17px;
+  border-width: 2px;
+}
+/* line 146, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button.disabled:active, body button[disabled] {
+  padding: 5px 18px;
+  border-width: 1px;
+}
+/* line 24, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button.disabled:active, body button.disabled:hover, body button[disabled]:active, body button[disabled]:hover {
+  background-color: #47e000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b7e8a1), color-stop(10%, #7fd657), color-stop(50%, #51a729), color-stop(50%, #4b9b26), color-stop(100%, #5fc430));
+  background-image: -moz-linear-gradient(top, #b7e8a1 0%, #7fd657 10%, #51a729 50%, #4b9b26 50%, #5fc430 100%);
+  border-color: #39771d;
+  text-shadow: #1f6100 0px 1px 1px;
+  color: white;
+}
+/* line 26, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button:hover, body button:focus {
+  background-color: #42d100;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #aee595), color-stop(10%, #76d34b), color-stop(50%, #4b9b26), color-stop(50%, #458f23), color-stop(100%, #59b82d));
+  background-image: -moz-linear-gradient(top, #aee595 0%, #76d34b 10%, #4b9b26 50%, #458f23 50%, #59b82d 100%);
+  border-color: #336b1a;
+  text-shadow: #1a5200 0px 1px 1px;
+  color: white;
+}
+/* line 31, /usr/lib/ruby/gems/1.8/gems/fancy-buttons-0.4.1/lib/sass/./_fancy_buttons.sass */
+body button:active {
+  background-color: #3dc100;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #4b9b26), color-stop(30%, #4fa328), color-stop(50%, #479224), color-stop(50%, #418621), color-stop(100%, #5bbb2e));
+  background-image: -moz-linear-gradient(top, #4b9b26 0%, #4fa328 30%, #479224 50%, #418621 50%, #5bbb2e 100%);
+  border-color: #2d5e17;
+  text-shadow: #154200 0px -1px -1px;
+  color: white;
+}

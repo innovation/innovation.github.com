@@ -1,0 +1,50 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset.sass
+// To configure blueprint, edit the partials/base.sass file.
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+!blueprint_grid_columns = 24
+!blueprint_container_size = 950px
+!blueprint_grid_margin  = 10px
+
+// Use this to calculate the width based on the total width.
+// Or you can set !blueprint_grid_width to a fixed value and unset !blueprint_container_size -- it will be calculated for you.
+!blueprint_grid_width   = (!blueprint_container_size + !blueprint_grid_margin) / !blueprint_grid_columns - !blueprint_grid_margin
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/scaffolding.sass
+
+// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
+// +blueprint
+
+//Recommended Blueprint configuration with scoping and semantic layout:
++blueprint-scaffolding("body.bp")
+body.bp
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+form.bp
+  +blueprint-form
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.three-col
+  #container
+    +container
+  #header, #footer
+    +column(!blueprint_grid_columns)
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    !sidebar_columns = floor(!blueprint_grid_columns / 3)
+    +column(!sidebar_columns)
+  #content
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
+    // true means it's the last column in the row
+    +column(!content_columns, true)

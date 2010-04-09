@@ -1,0 +1,31 @@
+!!! Strict
+%html
+  %head
+    %title
+      = page_title
+    - if @page_description
+      %meta{:name => "description", :content => @page_description}
+
+    = stylesheets :screen, :application, :media => "screen, projection"
+    = stylesheets :print, :media => "print"
+    /[if lt IE 8]
+      = stylesheets :ie, :media => "screen, projection"
+
+    = javascripts("http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    = javascripts('application')
+
+  %body{:id => body_id, :class => body_class}
+    %div#container
+      %div#header
+        Header -------------------------
+
+      %div#sidebar
+        %ul
+          %li One
+          %li Two
+
+      %div#content
+        = yield
+
+      %div#footer
+        Footer ----------------------------
