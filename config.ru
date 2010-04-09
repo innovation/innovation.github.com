@@ -1,13 +1,2 @@
-require "rubygems"
-require "bundler"
-Bundler.require_env
-
-require 'rack/contrib'
-require 'rack-rewrite'
-
-use Rack::StaticCache, :urls => ['/images', '/stylesheets', 'javascripts', '/favicon.ico'], :root => ''
-use Rack::ETag
-use Rack::Rewrite do
-  rewrite '/', '/index.html'
-end
-run Rack::Directory.new('')
+use Rack::Static, :urls => ["/stylesheets", "/images"], :root => ""
+run lambda { |env| [200, { 'Content-Type' => 'text/html', 'Cache-Control' => 'public, max-age=86400' }, File.open('public/index.html', File::RDONLY)]
