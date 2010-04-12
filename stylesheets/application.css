@@ -22,39 +22,40 @@ body #container {
 body #logo {
   background: url('../images/banner.png');
   background: #4194d0;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  background: #15406b;
+  padding: 1em;
 }
-/* line 32 */
+/* line 31 */
 body #logo a img {
   border: none;
-  height: 52px;
+  height: 36px;
 }
-/* line 37 */
+/* line 36 */
 body #content {
   padding: 20px;
 }
-/* line 41 */
+/* line 40 */
 body #footer {
   padding: 20px;
   border-top-style: solid;
   border-top-width: 14px;
   border-top-color: #79c366;
 }
-/* line 48 */
+/* line 47 */
 body #menu {
   height: 2.2em;
   background-color: #79c366;
+  background-color: #006b32;
   border-top: 1px #348F1A solid;
   border-bottom: 1px #348F1A solid;
 }
-/* line 55 */
+/* line 54 */
 body #menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 60 */
+/* line 59 */
 body #menu li {
   margin: 0;
   padding: 0;
@@ -63,30 +64,31 @@ body #menu li {
   float: left;
   text-align: center;
 }
-/* line 68 */
+/* line 67 */
 body #menu a {
   text-decoration: none;
   display: block;
   height: 1.7em;
   padding-top: 0.5em;
   background-color: #79c366;
+  background-color: #006b32;
   color: #000;
   font-size: 1em;
   font-weight: bold;
   color: #FFF;
 }
-/* line 83 */
+/* line 82 */
 body #menu li.first a {
   border-left: none;
 }
-/* line 87 */
+/* line 86 */
 body #menu li.selected a, body #menu a:hover {
   background-color: #FFF;
   color: #000;
   color: #15406b;
   border-bottom: 1px #FFF solid;
 }
-/* line 93 */
+/* line 92 */
 body button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1271035975') repeat-x bottom left;
