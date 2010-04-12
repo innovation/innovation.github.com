@@ -17,7 +17,6 @@ body #container {
   border: 1px #AAA solid;
   -moz-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
   -webkit-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
-  -webkit-border-radius: 12px;
 }
 /* line 24 */
 body #logo {
@@ -84,9 +83,10 @@ body #menu li.first a {
 body #menu li.selected a, body #menu a:hover {
   background-color: #FFF;
   color: #000;
+  color: #15406b;
   border-bottom: 1px #FFF solid;
 }
-/* line 92 */
+/* line 93 */
 body button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1271035975') repeat-x bottom left;
