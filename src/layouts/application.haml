@@ -13,32 +13,28 @@
     /[if lt IE 8]
       = stylesheets :ie, :media => "screen, projection"
 
-    = javascripts("application")
+    = javascripts "jquery-1.4.2.min"
+    = javascripts "jquery.corner"
+    = javascripts "jquery.boxshadow"
+    = javascripts "application"
 
   %body{:id => body_id, :class => body_class}
   .container
     #container.span-24
       #logo.span-24
-        %a{ :href => "/" }
+        %a{ :href => "home.html" }
           %img{ :src => "images/logo.png" }
 
       #menu.span-24
         %ul
-          %li
-            %a{ :href => "" }
-              Home
-          %li.selected
-            %a{ :href => "" }
-              Challenges
-          %li
-            %a{ :href => "" }
-              Technology
-          %li
-            %a{ :href => "" }
-              Case Studies
-          %li
-            %a{ :href => "" }
-              Solutions
+          - pages.each do |page|
+            - classes = []
+            - classes << "selected" if page == @page
+            - classes << "first"    if page == pages.first
+            - classes << "last"     if page == pages.last
+            
+            %li{ :class => classes.join(" ") }
+              = link_to page, page.gsub(" ", "_").downcase + ".html"
 
       #content.span-24
         = yield

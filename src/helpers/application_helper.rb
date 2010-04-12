@@ -3,6 +3,9 @@ module ApplicationHelper
     "http://www.microsoft.com/industry/publicsector/government/csp/#{name}"
   end
 
+  def pages
+    ["Home", "Challenges", "Technology", "Training", "Services", "Case Studies", "Contact"]
+  end
 
   def page_title
     full_page_title.join(" - ")
@@ -33,7 +36,7 @@ module ApplicationHelper
 
   
   def body_class
-    class_names.join(" ")
+    "bp " + class_names.join(" ")
   end
   
 

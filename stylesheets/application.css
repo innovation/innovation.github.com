@@ -5,6 +5,7 @@ body {
   font-family: Verdana;
   font-size: 10pt;
   background: url('../images/body_bg.jpg') repeat-x;
+  background: #DDD;
 }
 /* line 10 */
 body #container {
@@ -13,75 +14,79 @@ body #container {
   margin-right: auto;
   background-color: #FFF;
   height: auto;
+  border: 1px #AAA solid;
+  -moz-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
+  -webkit-border-radius: 12px;
 }
-/* line 18 */
+/* line 24 */
 body #logo {
   background: url('../images/banner.png');
   background: #4194d0;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 }
-/* line 25 */
+/* line 32 */
 body #logo a img {
   border: none;
   height: 52px;
 }
-/* line 30 */
+/* line 37 */
 body #content {
   padding: 20px;
 }
-/* line 34 */
+/* line 41 */
 body #footer {
   padding: 20px;
   border-top-style: solid;
   border-top-width: 14px;
   border-top-color: #79c366;
 }
-/* line 41 */
+/* line 48 */
 body #menu {
   height: 2.2em;
   background-color: #79c366;
+  border-top: 1px #348F1A solid;
+  border-bottom: 1px #348F1A solid;
 }
-/* line 45 */
+/* line 55 */
 body #menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 50 */
+/* line 60 */
 body #menu li {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 14%;
+  width: 13.5%;
   float: left;
   text-align: center;
 }
-/* line 58 */
+/* line 68 */
 body #menu a {
   text-decoration: none;
   display: block;
   height: 1.7em;
   padding-top: 0.5em;
   background-color: #79c366;
-  margin-right: 1px;
   color: #000;
   font-size: 1em;
   font-weight: bold;
   color: #FFF;
 }
-/* line 71 */
-body #menu li.selected a {
-  background: none;
+/* line 83 */
+body #menu li.first a {
+  border-left: none;
+}
+/* line 87 */
+body #menu li.selected a, body #menu a:hover {
   background-color: #FFF;
   color: #000;
+  border-bottom: 1px #FFF solid;
 }
-/* line 76 */
-body #menu a:hover {
-  background-color: #FFF;
-  color: #000;
-}
-/* line 80 */
+/* line 92 */
 body button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1271035975') repeat-x bottom left;

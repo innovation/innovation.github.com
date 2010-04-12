@@ -5,7 +5,7 @@ body
     family: Verdana
     size: 10pt
   background: url('../images/body_bg.jpg') repeat-x
-
+  background: #DDD
 
   #container
     width: 950px
@@ -13,11 +13,18 @@ body
     margin-right: auto
     background-color: #FFF
     height: auto
+    border: 1px #AAA solid
 
+    -moz-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px
+    
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px
+    -webkit-border-radius: 12px
+    
 
   #logo
     background: url('../images/banner.png')
     background: #4194d0
+    // background: #15406b
     padding-bottom: 0.5em
     padding-top: 0.5em
   
@@ -41,6 +48,9 @@ body
   #menu
     height: 2.2em
     background-color: #79c366
+    // background-color: #006b32
+    border-top: 1px #348F1A solid
+    border-bottom: 1px #348F1A solid
     
     ul
       margin: 0
@@ -51,7 +61,7 @@ body
       margin: 0
       padding: 0
       list-style: none
-      width: 14%
+      width: 13.5%
       float: left
       text-align: center
 
@@ -61,21 +71,23 @@ body
       height: 1.7em
       padding-top: 0.5em
       background-color: #79c366
-      margin-right: 1px
+      // background-color: #006b32
       color: #000
       font-size: 1em
       font-weight: bold
       color: #FFF
-
-    li.selected
+      // border-right: 1px #348F1A solid
+      // border-left: 1px #A8DF99 solid
+    
+    li.first
       a
-        background: none
-        background-color: #FFF
-        color: #000
+        border-left: none
 
-    a:hover
+
+    li.selected a, a:hover
       background-color: #FFF
       color: #000
+      border-bottom: 1px #FFF solid
 
   button
     +fancy-button(#57b42c)
