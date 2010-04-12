@@ -7,28 +7,44 @@
     %meta{ :name => "description", :content => page_description }/
     %meta{ :name => "keywords",    :content => page_keywords    }/
 
-    = stylesheets :screen, :application, :media => "screen, projection"
+    = stylesheets :screen, :media => "screen, projection"
+    = stylesheets :application, :media => "screen, projection"
     = stylesheets :print, :media => "print"
     /[if lt IE 8]
       = stylesheets :ie, :media => "screen, projection"
 
-    = javascripts("http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js")
-    = javascripts('application')
+    = javascripts("application")
 
   %body{:id => body_id, :class => body_class}
-    %div#container
-      %div#header
-        Microsoft Innovation Center
+  .container
+    #container.span-24
+      #logo.span-24
+        %a{ :href => "/" }
+          %img{ :src => "images/logo.png" }
 
-      %div#sidebar
+      #menu.span-24
         %ul
-          %li= link_to "CSP", csp_url
-          %li= link_to "BP3", "http://www.bp-3.com"
+          %li
+            %a{ :href => "" }
+              Home
+          %li.selected
+            %a{ :href => "" }
+              Challenges
+          %li
+            %a{ :href => "" }
+              Technology
+          %li
+            %a{ :href => "" }
+              Case Studies
+          %li
+            %a{ :href => "" }
+              Solutions
 
-      %div#content
+      #content.span-24
         = yield
 
-      %div#footer
+      #footer.span-24
+        / %img{ :src => "images/footer.png", :style => "float:right;" }
         Mirosoft Innovation Center, Institute of Information Technology, Vietnam Academy of Science and Technology
         %br/
         18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam
