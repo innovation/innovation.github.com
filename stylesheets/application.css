@@ -40,8 +40,10 @@ body #footer {
   border-top-style: solid;
   border-top-width: 14px;
   border-top-color: #79c366;
+  text-align: center;
+  color: #777;
 }
-/* line 47 */
+/* line 49 */
 body #menu {
   height: 2.2em;
   background-color: #79c366;
@@ -49,13 +51,13 @@ body #menu {
   border-top: 1px #348F1A solid;
   border-bottom: 1px #348F1A solid;
 }
-/* line 54 */
+/* line 56 */
 body #menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 59 */
+/* line 61 */
 body #menu li {
   margin: 0;
   padding: 0;
@@ -64,7 +66,7 @@ body #menu li {
   float: left;
   text-align: center;
 }
-/* line 67 */
+/* line 69 */
 body #menu a {
   text-decoration: none;
   display: block;
@@ -77,18 +79,18 @@ body #menu a {
   font-weight: bold;
   color: #FFF;
 }
-/* line 82 */
+/* line 84 */
 body #menu li.first a {
   border-left: none;
 }
-/* line 86 */
+/* line 88 */
 body #menu li.selected a, body #menu a:hover {
   background-color: #FFF;
   color: #000;
   color: #15406b;
   border-bottom: 1px #FFF solid;
 }
-/* line 92 */
+/* line 94 */
 body button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1271035975') repeat-x bottom left;
