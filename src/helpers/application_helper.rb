@@ -48,5 +48,17 @@ module ApplicationHelper
   def class_names
     body_class = [body_class_current_page]
     body_class << (@body_class unless @body_class.nil?)
-  end  
+  end
+  
+  
+  def google_analytics
+<<-EOS    
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  try { _gat._getTracker("UA-15818519-1")._trackPageview(); } catch(err) {}
+</script>
+EOS
+  end
+  
 end
