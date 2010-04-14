@@ -34,7 +34,7 @@
               - classes << "last"     if page == pages.last
             
               %li{ :class => classes.join(" ") }
-                = link_to page, page.gsub("&", "n").gsub(" ", "_").downcase + ".html"
+                = link_to page, page.gsub("&", "and").gsub(" ", "_").downcase + ".html"
 
         #content.span-24
           = yield

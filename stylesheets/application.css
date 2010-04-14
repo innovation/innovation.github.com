@@ -90,30 +90,30 @@ body #menu a {
   text-decoration: none;
   display: block;
   height: 1.7em;
-  padding-top: 0.5em;
-  background-color: #79c366;
+  padding-top: 0.25em;
+  padding-bottom: 0.15em;
   background-color: #006b32;
   color: #000;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #FFF;
   font-weight: bold;
 }
-/* line 102 */
+/* line 100 */
 body #menu li.first a {
   border-left: none;
 }
-/* line 106 */
+/* line 104 */
 body #menu li.selected a {
   background-color: #FFF;
   color: #000;
   color: #15406b;
   border-bottom: 1px #FFF solid;
 }
-/* line 112 */
+/* line 110 */
 body #menu a:hover {
   text-decoration: underline;
 }
-/* line 115 */
+/* line 113 */
 body button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1270776031') repeat-x bottom left;
