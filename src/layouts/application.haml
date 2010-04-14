@@ -13,8 +13,8 @@
     /[if lt IE 8]
       = stylesheets :ie, :media => "screen, projection"
 
-    =# javascripts "jquery-1.4.2.min"
-    =# javascripts "jquery.corner"
+    = javascripts "jquery-1.4.2.min"
+    = javascripts "jquery.corner"
     =# javascripts "jquery.boxshadow"
     =# javascripts "application"
 
@@ -34,14 +34,15 @@
               - classes << "last"     if page == pages.last
             
               %li{ :class => classes.join(" ") }
-                = link_to page, page.gsub(" ", "_").downcase + ".html"
+                = link_to page, page.gsub("&", "n").gsub(" ", "_").downcase + ".html"
 
         #content.span-24
           = yield
 
         #footer.span-24
-          Mirosoft Innovation Center, 
-          Institute of Information Technology, 
+          Mirosoft Innovation Center
+          %br/
+          Institute of Information Technology,
           Vietnam Academy of Science and Technology
           %br/
           18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam
