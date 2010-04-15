@@ -6,6 +6,10 @@ module ApplicationHelper
   def pages
     ["Home", "Training", "Services", "Solutions", "People & Contacts"]
   end
+  
+  def make_page_url(page)
+    urlify(page) + ".html"
+  end
 
   def page_title
     full_page_title.join(" - ")

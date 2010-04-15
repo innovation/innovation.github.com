@@ -20,19 +20,14 @@
     .container
       #container.span-24
         #logo.span-24
-          %a{ :href => "home.html" }
-            %img{ :src => "images/mic-logo-white-small.png" }
+          = link img("mic-logo-white-small.png"), "home.html"
 
         #menu.span-24
           %ul
             - pages.each do |page|
-              - classes = []
-              - classes << "selected" if page == @page
-              - classes << "first"    if page == pages.first
-              - classes << "last"     if page == pages.last
-            
-              %li{ :class => classes.join(" ") }
-                = link_to page, page.gsub("&", "and").gsub(" ", "_").downcase + ".html"
+              - page_url = make_page_url(page)            
+              %li{ :class => "#{"selected" if current_page.include?(page_url)}" }
+                = link_to page, page_url
 
         #content.span-24
           = yield
