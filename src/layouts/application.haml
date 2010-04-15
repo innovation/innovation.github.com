@@ -7,16 +7,14 @@
     %meta{ :name => "description", :content => page_description }/
     %meta{ :name => "keywords",    :content => page_keywords    }/
 
-    = stylesheets :screen, :media => "screen, projection"
-    = stylesheets :application, :media => "screen, projection"
-    = stylesheets :print, :media => "print"
-    /[if lt IE 8]
-      = stylesheets :ie, :media => "screen, projection"
 
-    = javascripts "jquery-1.4.2.min"
-    = javascripts "jquery-ui-1.8.custom"
-    = javascripts "jquery.corner"
-    = javascripts "application"
+    = stylesheets "screen", :media => "screen, projection"
+    = stylesheets "print", :media => "print"
+    = stylesheets "le-frog/jquery-ui-1.8.custom", :media => "screen, projection"
+    = stylesheets "application", :media => "screen, projection"
+
+    /[if lt IE 8]
+      = stylesheets "ie", :media => "screen, projection"
 
   %body{:id => body_id, :class => body_class}
     .container
@@ -48,3 +46,9 @@
           18, Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam
 
       = google_analytics
+      
+
+  = javascripts "jquery-1.4.2.min"
+  = javascripts "jquery-ui-1.8.custom.min"
+  = javascripts "jquery.corner"
+  = javascripts "application"
