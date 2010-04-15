@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def pages
-    ["Home", "Challenges", "Technology", "Training", "Services", "Case Studies", "Contact"]
+    ["Home", "Training", "Services", "Solutions", "People & Contacts"]
   end
 
   def page_title

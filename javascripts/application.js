@@ -3,6 +3,5 @@ $(function () {
   $("#logo").corner("top 9px");
   $("#container").boxShadow(10, 10, 5, "#888");
   
-  $("#tabs").tabs();
-  
+  $("#menu").tabs();  
 });
