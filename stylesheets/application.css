@@ -107,3 +107,8 @@ body #menu li.selected a {
 body #menu a:hover {
   color: #FFF;
 }
+
+/* line 111 */
+body.bp .showgrid {
+  background: url('../images/grid.png') repeat scroll 0 0 transparent;
+}
