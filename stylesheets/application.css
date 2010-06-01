@@ -1,15 +1,14 @@
 /* incase an inverted custom gradient isn't specified */
-
 /* line 3 */
 body {
   font-family: Verdana;
   font-size: 10pt;
-  background: url('../images/body_bg.jpg') repeat-x;
-  background: #DDD;
+  background: url("../images/body_bg.jpg") repeat-x;
+  background: #dddddd;
 }
 /* line 10 */
 body .module {
-  border: solid 1px #ccc;
+  border: solid 1px #cccccc;
   padding: 12px;
   margin: 0 0 24px;
 }
@@ -17,7 +16,7 @@ body .module {
 body .module h3 {
   font-size: 1.4em;
   padding: 10px 36px 10px 12px;
-  color: #FFF;
+  color: white;
   margin: -10px -10px 12px;
   border-bottom: none;
   background: #5290ca url("../images/arrow.gif") no-repeat right 8px;
@@ -27,15 +26,15 @@ body #container {
   width: 950px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFF;
+  background-color: white;
   height: auto;
-  border: 1px #AAA solid;
-  -moz-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
-  -webkit-box-shadow: rgba(0,0,0,0.5) 0px 0px 24px;
+  border: 1px #aaaaaa solid;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
 }
 /* line 38 */
 body #logo {
-  background: url('../images/banner.png');
+  background: url("../images/banner.png");
   background: #15406b;
   padding: 1em;
 }
@@ -57,18 +56,18 @@ body #footer {
   border-top-color: #79c366;
   text-align: center;
   font-size: 0.9em;
-  color: #777;
+  color: #777777;
 }
 /* line 64 */
 body #footer span {
-  color: #000;
+  color: black;
 }
 /* line 67 */
 body #menu {
   height: 2.2em;
   background-color: #006b32;
-  border-top: 1px #348F1A solid;
-  border-bottom: 1px #348F1A solid;
+  border-top: 1px #348f1a solid;
+  border-bottom: 1px #348f1a solid;
 }
 /* line 74 */
 body #menu ul {
@@ -89,26 +88,26 @@ body #menu li {
 body #menu a {
   text-decoration: none;
   display: block;
-  height: 1.7em;
+  height: 1.6em;
   padding-top: 0.25em;
   padding-bottom: 0.15em;
   background-color: #006b32;
   font-size: 1.1em;
   font-weight: bold;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 /* line 99 */
 body #menu li.selected a {
-  background-color: #FFF;
+  background-color: white;
   color: #15406b;
-  border-bottom: 1px #FFF solid;
+  border-bottom: 1px white solid;
 }
 /* line 104 */
 body #menu a:hover {
-  color: #FFF;
+  color: white;
 }
 
 /* line 111 */
 body.bp .showgrid {
-  background: url('../images/grid.png') repeat scroll 0 0 transparent;
+  background: url("../images/grid.png") repeat scroll 0 0 transparent;
 }
